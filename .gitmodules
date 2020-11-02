@@ -1,3 +1,6 @@
 [submodule "RBGParser"]
 	path = RBGParser
 	url = https://github.com/taolei87/RBGParser.git
+[submodule "IncTransitionParser"]
+	path = IncTransitionParser
+	url = https://gitlab.com/akoehn/IncTransitionParser.git
