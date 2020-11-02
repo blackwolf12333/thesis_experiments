@@ -1,2 +1,3 @@
 dynet
 training_data
+models/ewt_english/*
