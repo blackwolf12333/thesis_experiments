@@ -53,5 +53,28 @@ in the filename is the beam size.
 Similar to the main experiment this will output a `results_bs10.csv` file
 with the scores.
 
+## Docker, what and why
+
+I haven't seen many repositories that host the code used in papers that use
+docker to make the setup easier. So I'd like to quickly explain what it is and
+why I'm using it here. I also want to quickly link [a great blog post](https://arne.chark.eu/2019/tips-research-software/) about
+why you should post the code to reproduce your results.
+
+Docker is a system for creating and managing _containers_. A container is a
+package of software that puts all code and dependencies for a piece of software
+in a reliable and lightweight package. The _Docker Engine_ is used to turn 
+container images into containers, this means that you can run the code
+that is contained in the container image anywhere that the Docker Engine runs.
+For this reason it makes it a simple way to setup an environment that all
+dependencies are satisfied for your code and you can ensure that anyone who
+has docker installed can run it.
+
+Because setting up both of these parsers is not trivial, for this reason I have
+automated that in the dockerfile that describes the setup required to run the 
+code in this repository, as well as the code for PreTra and RBGParser. This
+makes it easier for anyone who wants to run this code, because they only have
+to install docker and build the docker image that contains all the dependencies
+for this code. Documentation on how to install docker can be found [here](https://www.docker.com/get-started).
+
 [1]: TODO
 [2]: https://arne.chark.eu/static/predictive-dependency-parsing.pdf
