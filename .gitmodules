@@ -7,3 +7,6 @@
 [submodule "tools"]
 	path = tools
 	url = https://github.com/UniversalDependencies/tools
+[submodule "UD_English-EWT"]
+	path = UD_English-EWT
+	url = https://github.com/UniversalDependencies/UD_English-EWT
