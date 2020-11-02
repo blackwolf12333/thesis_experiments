@@ -35,7 +35,7 @@ cd ../
 
 # We assume that if the directory exists, this has been run before and we skip
 # building dynet again
-if [ ! -d dynet ] then
+if [ ! -d dynet ]; then
 	git clone https://github.com/clab/dynet
 	cd dynet
 	mkdir build
