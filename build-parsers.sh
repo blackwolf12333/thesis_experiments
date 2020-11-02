@@ -44,8 +44,8 @@ if [ ! -d dynet ]; then
 	make -j 2
 	cd ../../
 
-	cp ../dynet/build/contrib/swig/dynet_swigJNI_dylib.jar ./IncTransitionParser/lib/
-	cp ../dynet/build/contrib/swig/dynet_swigJNI_scala_2.11.jar ./IncTransitionParser/lib/
+	cp dynet/build/contrib/swig/dynet_swigJNI_dylib.jar ./IncTransitionParser/lib/
+	cp dynet/build/contrib/swig/dynet_swigJNI_scala_2.11.jar ./IncTransitionParser/lib/
 fi
 
 cd IncTransitionParser 
