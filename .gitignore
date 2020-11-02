@@ -3,3 +3,6 @@ training_data
 models/ewt_english/*
 beam_search_errors/eval_out*
 beam_search_errors/test_out*
+
+main_experiment/eval_out*
+main_experiment/test_out*
