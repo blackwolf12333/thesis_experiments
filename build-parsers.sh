@@ -33,6 +33,9 @@ cd ../
 
 # PreTra
 
+# PreTra has a dependency on dynet for the lstm scorer. This feature can't be
+# disabled when building so we have to manually build dynet and let it
+# generate the native java bindings.
 # We assume that if the directory exists, this has been run before and we skip
 # building dynet again
 if [ ! -d dynet ]; then
@@ -40,6 +43,7 @@ if [ ! -d dynet ]; then
 	cd dynet
 	mkdir build
 	cd build
+	# if your instance of eigen3 is installed somewhere else modify the path here
 	cmake .. -DEIGEN3_INCLUDE_DIR=/usr/include/eigen3 -DENABLE_SWIG=ON
 	make -j 2
 	cd ../../
