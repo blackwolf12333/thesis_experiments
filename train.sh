@@ -4,4 +4,4 @@ set -eu
 
 ./pre-train.sh
 ./train-rbgparser.sh
-
+./train-pretra.sh
