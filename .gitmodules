@@ -4,3 +4,6 @@
 [submodule "IncTransitionParser"]
 	path = IncTransitionParser
 	url = https://gitlab.com/akoehn/IncTransitionParser.git
+[submodule "tools"]
+	path = tools
+	url = https://github.com/UniversalDependencies/tools
