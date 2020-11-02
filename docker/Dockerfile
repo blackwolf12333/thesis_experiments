@@ -9,3 +9,5 @@ RUN apt-get install -y curl \
     && apt-get install -y sbt
 
 RUN apt-get install -y swig3.0 cmake libeigen3-dev zip
+
+RUN apt-get install -y bc
