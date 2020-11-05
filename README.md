@@ -18,10 +18,11 @@ From there you can execute the following steps to build and train the parsers.
 1. `./build-parsers.sh`
 2. `./train.sh`
 
-This will probably take a while to train, on my systems it took around 2 to 3
-hours. Keep in mind that you need sufficient memory capacity, and if that is
-limitted keep enough swap space around. You should now have 2 model files in 
-`models/ewt_english`, one for PreTra and one for RBGParser.
+This will probably take a while to train, on my systems
+(i5-4570 CPU @ 3.20GHz, 24gb RAM and i7-7700HQ CPU @ 2.80GHz, 16gb) it took
+around 2 to 3 hours. Keep in mind that you need sufficient memory capacity,
+and if that is limitted keep enough swap space around. You should now have 2 
+model files in `models/ewt_english`, one for PreTra and one for RBGParser.
 
 
 ## Experiments
